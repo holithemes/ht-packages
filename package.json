@@ -1,5 +1,5 @@
 {
-  "name": "ht-packages",
+  "name": "@holithemes/ht-packages",
   "version": "1.0.1",
   "main": "index.js",
   "type": "module",
