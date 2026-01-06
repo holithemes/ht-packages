@@ -16,9 +16,9 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint:js": "eslint . --ext .js",
-    "lint:js:fix": "bash -lc 'if [ -z \"$LINT_JS_FIX_RUNNING\" ]; then export LINT_JS_FIX_RUNNING=1; echo \"▶ Running ESLint --fix...\"; eslint . --ext .js --fix; npm run lint:js:report; else echo \"⚠ ESLint fix already running, skipping to prevent loop\"; fi'",
-    "lint:js:report": "bash -lc 'mkdir -p dev/reports/eslint; echo \"▶ Running ESLint...\"; npx eslint . --ext .js --format=json -o dev/reports/eslint/eslint-report.json || true; echo \"▶ Formatting summary...\"; bash dev/reports/summarize-eslint.sh; echo \"✅ Done → dev/reports/eslint/eslint-report-format.txt\"'",
+    "lint:js": "eslint .",
+    "lint:js:fix": "bash -lc 'if [ -z \"$LINT_JS_FIX_RUNNING\" ]; then export LINT_JS_FIX_RUNNING=1; echo \"▶ Running ESLint --fix...\"; eslint . --fix; npm run lint:js:report; else echo \"⚠ ESLint fix already running, skipping to prevent loop\"; fi'",
+    "lint:js:report": "bash -lc 'mkdir -p dev/reports/eslint; echo \"▶ Running ESLint...\"; npx eslint . --format=json -o dev/reports/eslint/eslint-report.json || true; echo \"▶ Formatting summary...\"; bash dev/reports/summarize-eslint.sh; echo \"✅ Done → dev/reports/eslint/eslint-report-format.txt\"'",
 
     "lint:php": "vendor/bin/phpcs",
     "lint:php:fix": "bash -lc 'if [ -z \"$LINT_PHP_FIX_RUNNING\" ]; then export LINT_PHP_FIX_RUNNING=1; echo \"▶ Running PHPCBF...\"; vendor/bin/phpcbf; npm run lint:php:report; else echo \"⚠ PHPCBF already running, skipping to prevent loop\"; fi'",
