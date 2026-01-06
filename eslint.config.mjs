@@ -76,7 +76,7 @@ export default [
       "max-len": [
         "warn",
         {
-          code: 100,
+          code: 150,
           tabWidth: 4,
           ignoreUrls: true,
           ignoreStrings: true,
