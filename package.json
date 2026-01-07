@@ -36,14 +36,7 @@
   },
   "homepage": "https://github.com/harsha-ht-code/ht-packages#readme",
   "description": "",
-  "peerDependencies": {
-    "eslint": "^9.0.0",
-    "@eslint/js": "^9.0.0",
-    "eslint-plugin-security": "^3.0.0",
-    "eslint-plugin-no-unsanitized": "^4.0.0",
-    "globals": "^13.0.0"
-  },
-  "devDependencies": {
+  "dependencies": {
     "@eslint/js": "^9.39.2",
     "eslint": "^9.39.2",
     "eslint-plugin-no-unsanitized": "^4.0.2",
