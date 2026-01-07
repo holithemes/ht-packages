@@ -17,6 +17,23 @@ ht-packages/
 
 ## 📦 Publishing Packages
 
+## 📝 Publishing Notes
+
+### First Time Publishing
+- **`--access public`** is required for scoped packages (`@holithemes/*`)
+- Without it, npm tries to publish as private (requires paid plan)
+- Once set, subsequent publishes remember the access level
+
+### What Happens Without `--access public`?
+```bash
+# This will FAIL for first publish:
+npm publish
+# Error: You must sign up for private packages
+
+# This will WORK:
+npm publish --access public
+```
+
 ### Prerequisites
 1. **NPM Account**: Create account at [npmjs.com](https://npmjs.com)
 2. **Organization Access**: Join `@holithemes` organization
@@ -34,8 +51,11 @@ cd packages/eslint-config
 # Update version
 npm version patch  # or minor/major
 
-# Publish to npm
+# First publish (sets public access)
 npm publish --access public
+
+# Subsequent publishes
+npm publish
 
 # Verify publication
 npm view @holithemes/eslint-config
@@ -48,8 +68,11 @@ cd packages/phpcs-config
 # Update version
 npm version patch
 
-# Publish to npm
+# First publish (one time only)
 npm publish --access public
+
+# Subsequent publishes
+npm publish
 
 # Verify publication
 npm view @holithemes/phpcs-config
@@ -62,8 +85,11 @@ cd packages/shared-utils
 # Update version
 npm version patch
 
-# Publish to npm
+# First publish (one time only)
 npm publish --access public
+
+# Subsequent publishes
+npm publish
 
 # Verify publication
 npm view @holithemes/shared-utils
@@ -76,8 +102,11 @@ cd packages/ht-packages
 # Update version
 npm version patch
 
-# Publish to npm
+# First publish (one time only)
 npm publish --access public
+
+# Subsequent publishes
+npm publish
 
 # Verify publication
 npm view @holithemes/ht-packages
