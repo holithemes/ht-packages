@@ -2,7 +2,7 @@
 
 > 🏢 **HoliThemes** - We build cutting-edge web technologies that bring your digital presence into the future
 
-Internal PHP CodeSniffer configuration for HoliThemes  projects with coding standards,security rules and quality enforcement.
+Internal PHP CodeSniffer configuration for HoliThemes projects with coding standards,security rules and quality enforcement.
 
 ## Installation
 
