@@ -1,4 +1,4 @@
-# HT Packages Monorepo
+# HT Packages 
 
 > 🏢 **Built by HoliThemes** - We build cutting-edge web technologies that bring your digital presence into the future
 
@@ -12,11 +12,6 @@ ESLint configuration with security and best practices rules.
 ### [@holithemes/phpcs-config](./packages/phpcs-config)
 PHP CodeSniffer configuration for WordPress projects.
 
-### [@holithemes/ht-packages](./packages/ht-packages)
-Main package that combines all configurations.
-
-### [@holithemes/shared-utils](./packages/shared-utils)
-Shared utilities used across packages.
 
 ## Installation
 
@@ -50,26 +45,7 @@ import { eslintConfig } from '@holithemes/ht-packages';
 export default eslintConfig;
 ```
 
-## Development
-
-```bash
-# Install dependencies
-npm install
-
-# Build all packages
-npm run build
-
-# Publish all packages
-npm run publish:all
-
-# Version bump
-npm run version:patch
-```
-
-## Security
-
-All packages include security-focused linting rules and best practices for secure coding.
 
 ### 📞 **Contact Us**
 - 🌐 **Website**: [holithemes.com](https://holithemes.com)
-- 📧 **Email**: [contact@holithemes.com](mailto:support@holithemes.com)
+- 📧 **Email**: [support@holithemes.com](mailto:support@holithemes.com)
