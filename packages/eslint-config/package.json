@@ -1,6 +1,6 @@
 {
   "name": "@holithemes/eslint-config",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "ESLint configuration for HoliThemes projects",
   "main": "index.js",
   "type": "module",

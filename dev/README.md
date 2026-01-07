@@ -50,8 +50,8 @@ npm login
 ```bash
 cd packages/eslint-config
 
-# Update version
-npm version patch  # or minor/major
+# Update version  # or minor/major
+npm version patch
 
 # First publish (sets public access)
 npm publish --access public
