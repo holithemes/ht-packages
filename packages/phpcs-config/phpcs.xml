@@ -23,7 +23,7 @@
   <exclude-pattern>node_modules/*</exclude-pattern>
 
   <!-- Disable specific rules -->
-  <rule ref="Squiz.Commenting.InlineComment.InvalidEndChar">
+  <rule ref="">
     <severity>0</severity>
   </rule>
   
