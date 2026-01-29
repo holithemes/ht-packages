@@ -21,11 +21,6 @@
   <!-- Exclude paths -->
   <exclude-pattern>vendor/*</exclude-pattern>
   <exclude-pattern>node_modules/*</exclude-pattern>
-
-  <!-- Disable specific rules -->
-  <rule ref="">
-    <severity>0</severity>
-  </rule>
   
   <!-- Ignore non-PHP assets -->
   <exclude-pattern>*.min.js</exclude-pattern>

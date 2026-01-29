@@ -202,16 +202,7 @@ export default [
   
   // Special configuration for minified/compiled files
   {
-    files: [
-      '**/*.min.js',
-      'new/inc/assets/js/app.js',
-      'new/inc/assets/js/woo.js',
-      'new/inc/assets/js/group.js',
-      'new/inc/assets/js/share.js',
-      'new/admin/admin_assets/js/admin.js',
-      'new/admin/admin_assets/js/greetings.js',
-      'new/admin/admin_demo/admin-demo.js'
-    ],
+
     languageOptions: {
       ecmaVersion: 2020,
       sourceType: 'module',
